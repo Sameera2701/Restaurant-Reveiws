@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sentiment Analysis Result</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?fit=crop&w=1350&q=80') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+            width: 90%;
+        }
+        .hed {
+             color: #161345;
+            font-size: 3em;
+             
+            margin-bottom: 20px;
+       }
+       h1 {
+        font-family: 'Times New Roman', Times, serif;
+            color: #e74c3c;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-family: 'Courier New', Courier, monospace;
+            color: #34495e;
+            margin-bottom: 10px;
+        }
+        p {
+            font-family: Verdana, Geneva, sans-serif;
+            color: #2c3e50;
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+        a {
+            font-family: 'Roboto', sans-serif;
+            font-weight:bold;
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        a:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="hed">DINE SENSE</h1>
+        <h1>Result</h1>
+        <h2>Review</h2>
+        <p>{{ review }}</p>
+        <h2>Predicted Sentiment</h2>
+        <p>{{ prediction }}</p>
+        <a href="/">BACK</a>
+    </div>
+</body>
+</html>
