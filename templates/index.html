@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sentiment Analysis Input</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>DINE SENSE</h1>
+    <form action="/predict" method="post">
+        <label for="review">Describe your visit in a few words that capture the essence of your experience</label>
+        <textarea id="review" name="review" rows="4" cols="50"></textarea><br>
+        <input type="submit" value="SUBMIT">
+    </form>
+</body>
+</html>
